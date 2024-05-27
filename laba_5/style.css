@@ -1,0 +1,37 @@
+html{
+    background-color: #e8f9fd;
+}
+select, #textbox {
+    overflow-y: auto;
+    text-align: left;
+    margin: 10px;
+    width: 300px;
+    height: 150px;
+    border-radius:3px ;
+    background-color: #8ae5fa63;
+
+}
+select:hover,#textbox:hover,input:hover{
+    
+    outline-color:#59ce8f
+}
+.form_wrapper{
+    text-align: center;
+}
+
+input[type="radio"] {
+    margin-left: 10px;
+  }
+#name, #telephon, #mail, #date, #text, button{
+    margin: 10px;
+    width: 300px;
+    height: 50px;
+    border-radius:3px ;
+    background-color: #8ae5fa63;
+}
+button{
+    background-color: #ff1e00;
+}
+.error {
+    border: 2px solid red;
+  }

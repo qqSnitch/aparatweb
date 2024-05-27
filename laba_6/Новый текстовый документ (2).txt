@@ -1,0 +1,42 @@
+
+CREATE TABLE PL (
+    idPl INT PRIMARY KEY AUTO_INCREMENT,
+    lang INT NOT NULL
+);
+
+CREATE TABLE ProgLang (
+    idProg INT PRIMARY KEY AUTO_INCREMENT,
+    PL_id INT
+);
+
+CREATE TABLE FIO (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL,
+    phone VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    dr DATE NOT NULL,
+    pol VARCHAR(50) NOT NULL,
+    biography text NOT NULL
+);
+
+CREATE TABLE users (
+    user_id INT PRIMARY KEY AUTO_INCREMENT,
+    application_id INT NOT NULL,
+    login VARCHAR(50) NOT NULL,
+    password VARCHAR(50) NOT NULL
+);
+CREATE TABLE admin (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    login VARCHAR(50) NOT NULL,
+    password VARCHAR(50) NOT NULL
+);
+INSERT INTO admin (login, password) VALUES ('u67277', '5ae96dfdb1caf6ef9378c8351bb6f9e8');
+
+SELECT * FROM FIO;
+
+DROP TABLE admin;
+DROP TABLE PL;
+DROP TABLE ProgLang;
+DROP TABLE FIO;
+DROP TABLE users;
+
